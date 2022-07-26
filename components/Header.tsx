@@ -5,10 +5,11 @@ import { useEffect, useState } from 'react';
 const Header = () => {
 
   const [isScrolled,setIsScrolled] = useState(false)
+  console.log(isScrolled, 'adad')
 
   useEffect(()=>{
     const handelScroll = () =>{
-      if(window.screenY > 0 ){
+      if(window.scrollY > 0 ){
         setIsScrolled(true)
       }else{
         setIsScrolled(false)
@@ -22,7 +23,7 @@ const Header = () => {
   },[])
 
   return (
-    <header className={ `${isScrolled && 'bg-[#141414]' }` } >
+    <header className={ `${isScrolled && 'bg-[#141414] ' }` } >
       <div className="flex items-center space-x-2 md:space-x-10 ">
         <img
           src="https://i.ibb.co/5KH9K3G/netflix.png"
