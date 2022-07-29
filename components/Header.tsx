@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 const Header = () => {
 
   const [isScrolled,setIsScrolled] = useState(false)
-  console.log(isScrolled, 'adad')
 
   useEffect(()=>{
     const handelScroll = () =>{
