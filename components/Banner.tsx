@@ -2,6 +2,8 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 import { baseUrl } from "../constants/movie"
 import { Movie } from "../typings"
+import {FaPlay} from 'react-icons/fa'
+import { InformationCircleIcon } from "@heroicons/react/solid"
 
 interface Props {
   netflixOriginals : Movie[]
@@ -22,8 +24,8 @@ useEffect(() =>{
         <p  className=" max-w-xs text-sm md:max-w-lg lg:max-w-lg md:text-lg lg:text-2xl " > {movie?.overview} </p>
 
         <div className="" >
-          <button className="bannerBtn" >Play</button>
-          <button className="bannerBtn" >More Info</button>
+          <button className="bannerBtn bg-white text-black" > <FaPlay className="h-4 w-4 md:h-7 md:w-7 text-black " /> Play</button>
+          <button className="bannerBtn bg-[gray]/70 " > <InformationCircleIcon className="h-5 w-5 md:h-8 md:w-8 text-black " /> More Info</button>
         </div>
     </div>
   )
