@@ -22,7 +22,7 @@ const Header = () => {
   },[])
 
   return (
-    <header className={ `${isScrolled && 'bg-[#141414] ' }` } >
+    <header className={ `${isScrolled && ' backdrop-blur-xl bg-[#141414]/30' }` } >
       <div className="flex items-center space-x-2 md:space-x-10 ">
         <img
           src="https://i.ibb.co/5KH9K3G/netflix.png"
