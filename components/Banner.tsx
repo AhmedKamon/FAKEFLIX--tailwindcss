@@ -21,7 +21,7 @@ useEffect(() =>{
             <Image src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path }`} layout='fill' objectFit="cover" />
         </div>
         <h1 className=" text-2xl lg:text-7xl md:text-4xl font-bold " >{ movie?.name || movie?.original_name || movie?.original_title || movie?.title }</h1>
-        <p  className=" max-w-xs text-sm md:max-w-lg lg:max-w-lg md:text-lg lg:text-2xl text-shadow-md " > {movie?.overview} </p>
+        <p  className=" max-w-xs text-sm md:max-w-lg lg:max-w-4xl md:text-lg lg:text-2xl text-shadow-md " > {movie?.overview} </p>
 
         <div className=" flex space-x-3 " >
           <button className="bannerBtn bg-white text-black" > <FaPlay className="h-4 w-4 md:h-7 md:w-7 text-black " /> Play</button>

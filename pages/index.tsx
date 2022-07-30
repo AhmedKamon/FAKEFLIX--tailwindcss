@@ -38,13 +38,13 @@ const Home = ({
       <main className=" relative lg:pl-16 pl-4 pb-24 lg:space-x-24 ">
         <Banner netflixOriginals={netflixOriginals} />
         <section>
-          <Row title='Trending' movie={trending}/>
-          <Row title='Rop Rated' movie={topRated}/>
-          <Row title='Action Movies' movie={actionMovies}/>
-          <Row title='Comedy Movies' movie={comedyMovies}/>
-          <Row title='Horror Movies' movie={horrorMovies}/>
-          <Row title='Romance Movies' movie={romanceMovies}/>
-          <Row title='Documentaries' movie={documentaries}/>
+          <Row title='Trending' movies={trending}/>
+          <Row title='Rop Rated' movies={topRated}/>
+          <Row title='Action Movies' movies={actionMovies}/>
+          <Row title='Comedy Movies' movies={comedyMovies}/>
+          <Row title='Horror Movies' movies={horrorMovies}/>
+          <Row title='Romance Movies' movies={romanceMovies}/>
+          <Row title='Documentaries' movies={documentaries}/>
         </section>
       </main>
       {/* <Modal/> */}
