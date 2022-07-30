@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
+import Row from "../components/Row";
 import { Movie } from "../typings";
 import requests from "../utils/requests";
 
@@ -25,7 +26,7 @@ const Home = ({
   romanceMovies,
  documentaries
 }: Props) => {
-  console.log(netflixOriginals)
+  
   return (
     <div className=" relative h-screen bg-gradient-to-b from-gray-500/10 to-[#010511] lg:h-[140vh] ">
       <Head>
@@ -34,16 +35,16 @@ const Home = ({
       </Head>
 
       <Header />
-      <main>
+      <main className=" relative lg:pl-16 pl-4 pb-24 lg:space-x-24 ">
         <Banner netflixOriginals={netflixOriginals} />
         <section>
-          {/* <Row/> */}
-          {/* <Row/> */}
-          {/* <Row/> */}
-          {/* <Row/> */}
-          {/* <Row/> */}
-          {/* <Row/> */}
-          {/* <Row/> */}
+          <Row title='Trending' movie={trending}/>
+          <Row title='Rop Rated' movie={topRated}/>
+          <Row title='Action Movies' movie={actionMovies}/>
+          <Row title='Comedy Movies' movie={comedyMovies}/>
+          <Row title='Horror Movies' movie={horrorMovies}/>
+          <Row title='Romance Movies' movie={romanceMovies}/>
+          <Row title='Documentaries' movie={documentaries}/>
         </section>
       </main>
       {/* <Modal/> */}
