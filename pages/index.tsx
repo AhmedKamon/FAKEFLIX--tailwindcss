@@ -38,7 +38,7 @@ const Home = ({
         <div className="lg:pl-12">
           <Banner netflixOriginals={netflixOriginals} />
         </div>
-        <section>
+        <section className=" md:space-y-24 ">
           <Row title="Trending" movies={trending} />
           <Row title="Rop Rated" movies={topRated} />
           <Row title="Action Movies" movies={actionMovies} />
